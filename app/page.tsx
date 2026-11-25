@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { FormEvent, useState } from "react";
 
 const services = [
@@ -89,10 +91,7 @@ export default function Home() {
           <div className="portrait-card">
             <div className="portrait-frame">
               <div className="portrait-sun" />
-              <div className="portrait-placeholder" role="img" aria-label="Black and white portrait placeholder for Sibusiso Ngonyama">
-                <div className="portrait-head" /><div className="portrait-neck" /><div className="portrait-body" /><div className="portrait-shadow" />
-                <span className="portrait-label">A portrait of Sibusiso<br />will find its place here</span>
-              </div>
+              <div className="portrait-placeholder"><Image src="/sibusiso-ngonyama.jpeg" alt="Portrait of Sibusiso Ngonyama" width={900} height={1200} className="portrait-photo" priority /></div>
               <span className="portrait-tag">The founder</span>
             </div>
             <div className="portrait-caption"><span>01 / 01</span><span>Rhodes University · Makhanda</span></div>
@@ -158,8 +157,8 @@ export default function Home() {
       <footer className="site-footer">
         <div className="footer-top"><a href="#home" className="brand footer-brand"><BrandMark /><span>Outsource<br />Academic</span></a><p>There is no problem<br /><em>too small to talk through.</em></p><a className="back-top" href="#home">Back to the top <span>↑</span></a></div>
         <div className="footer-divider" />
-        <div className="footer-bottom"><div className="footer-detail"><span className="footer-label">A good time to reach out</span><strong>Monday – Saturday<br />08:30 – 22:30</strong></div><div className="footer-detail"><span className="footer-label">Send a note</span><a href="mailto:sibusisongonyama48@gmail.com">sibusisongonyama48@gmail.com</a></div><div className="footer-detail"><span className="footer-label">Call or WhatsApp</span><a href="https://wa.me/27670799166">+27 67 079 9166</a></div><div className="footer-assurance">Something else on your mind? Ask — it can be arranged upon consultation. Reach out. There is no problem too small to talk through.</div></div>
-        <div className="footer-legal"><span>© {new Date().getFullYear()} Outsource Academic</span><span>Made with care in Makhanda, South Africa</span><a href="#contact">Start a conversation <ArrowIcon /></a></div>
+        <div className="footer-bottom"><div className="footer-detail"><span className="footer-label">A good time to reach out</span><strong>Monday – Saturday<br />08:30 – 22:30</strong></div><div className="footer-detail"><span className="footer-label">Send a note</span><a href="mailto:sibusisongonyama@outsourceacademic.co.za">sibusisongonyama@outsourceacademic.co.za</a></div><div className="footer-detail"><span className="footer-label">Call or WhatsApp</span><a href="https://wa.me/27670799166">+27 67 079 9166</a></div><div className="footer-assurance">Something else on your mind? Ask — it can be arranged upon consultation. Reach out. There is no problem too small to talk through.</div></div>
+        <div className="footer-legal"><span>© {new Date().getFullYear()} Outsource Academic</span><a href="#contact">Start a conversation <ArrowIcon /></a></div>
       </footer>
     </main>
   );

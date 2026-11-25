@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const recipient = "sibusisongonyama48@gmail.com";
+const recipient = "sibusisongonyama@outsourceacademic.co.za";
 
 export async function POST(request: Request) {
   try {
